@@ -5,14 +5,13 @@ const PostContext = createContext();
 
 const PostsProvider = ({children}) =>{
 
+  const baseApiUrl = 'http://localhost:3000/posts'
   const [posts, setPosts] = useState([])
 
   const fetchPosts = () =>{
-    axios.get('http//localhost:3000/posts')
+    axios.get(baseApiUrl)
       .then(res => {
         setPosts(res.data)
-        console.log(res.data);
-        
       })
   }
 
