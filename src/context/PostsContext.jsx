@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState } from "react";
 import axios from "axios";
 
 const PostContext = createContext();
@@ -14,10 +14,6 @@ const PostsProvider = ({children}) =>{
         setPosts(res.data)
       })
   }
-
-  useEffect(()=>{
-    fetchPosts()
-  },[])
 
   return (
     <PostContext.Provider value={{posts, fetchPosts}}>
