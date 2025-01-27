@@ -8,13 +8,17 @@ const PostsList = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container d-flex">
       {posts.map((post) => (
-        <div className="card" key={post.id}>
+        <div className="card m-3" key={post.id}>
           <img src={post.image} className="card-img-top" alt={post.title} />
           <div className="card-body">
-            <h5 className="card-title">{post.title}</h5>
-            <p className="card-text">{post.content}</p>
+            <h5 className="card-title title">{post.title}</h5>
+            <p className="card-text content">{post.content}</p>
+            <p className="card-text">
+              <strong>TAGS: </strong>
+              {post.tags.join(", ")}
+            </p>
           </div>
         </div>
       ))}

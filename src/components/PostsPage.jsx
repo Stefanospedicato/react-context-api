@@ -1,12 +1,12 @@
-import PostsList from "./PostsList"
+import PostsList from "./PostsList";
 
 const PostsPage = () => {
   return (
     <div className="container">
-      <h3>Lista Posts</h3>
-      <PostsList/>
+      <h3 className="text-center main-title">Lista Posts</h3>
+      <PostsList />
     </div>
-  )
-}
+  );
+};
 
-export default PostsPage
+export default PostsPage;

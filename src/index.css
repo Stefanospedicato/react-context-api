@@ -1,0 +1,28 @@
+body{
+  background-color: beige;
+}
+
+.card{
+  width: calc(100% / 5);
+  background-color: darkgoldenrod;
+  border: none;
+}
+
+.posts{
+  font-weight: bolder;
+}
+
+.content{
+  height: 200px;
+  overflow: auto;
+}
+
+.title{
+  text-transform: uppercase;
+}
+
+.main-title{
+  color: darkorange;
+  text-transform: uppercase;
+  font-weight: bold;
+}
