@@ -1,6 +1,13 @@
+import Header from "./components/Header"
+import Main from "./components/Main"
+import { PostsProvider } from "./context/PostsContext"
+
 const App = () => {
   return (
-    <div>App</div>
+    <PostsProvider>
+      <Header/>
+      <Main/>
+    </PostsProvider>
   )
 }
 
